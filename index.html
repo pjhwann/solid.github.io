@@ -22,7 +22,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 		var epObj =
 		{
 			//The CSS for all the prime stimuli.
-			primeStimulusCSS : {color:'#0000FF','font-size':'2.3em'},
+			primeStimulusCSS : {color:'#COCOCO','font-size':'130px'},
 			//The prime categories.
 			primeCats :  [
 				{
@@ -41,7 +41,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 					name : 'NUMBER', 
 					title : {
 						media : {word : 'NUMBER'}, //Name of the attribute presented in the task.
-						css : {color:'#0000FF','font-size':'3em'} //Style of the attribute title.
+						css : {color:'#000000','font-size':'20px'} //Style of the attribute title.
 					}, 
 					mediaArray : [
 						{word: 'One'},
@@ -52,13 +52,13 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 						{word: 'Nine'},
 						{word: 'Ten'}
 					], 
-					stimulusCSS : {color:'#0000FF','font-size':'2em'}
+					stimulusCSS : {color:'#COCOCO','font-size':'130px'}
 				}, 
 				leftAttTargets : {
 					name : 'COLOR', 
 					title : {
 						media : {word : 'COLOR'}, //Name of the attribute presented in the task.
-						css : {color:'#0000FF','font-size':'3em'} //Style of the attribute title.
+						css : {color:'#000000','font-size':'20px'} //Style of the attribute title.
 					}, 
 					mediaArray : [
 						{word: 'Red'},
@@ -69,7 +69,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 						{word: 'Pink'},
 						{word: 'Green'}
 					],
-					stimulusCSS : {color:'#0000FF','font-size':'2em'}
+					stimulusCSS : {color:'#COCOCO','font-size':'130px'}
 				}
 			},
 			
@@ -298,8 +298,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				data : {score:0},// by default each trial is crrect, this is modified in case of an error
 				//Layout defines what will be presented in the trial. It is like a background display.
 				layout: [
-					{location:{left:2,top:1},media:{word:'key: E'}, css:{color:'#000000','font-size':'1em'}},
-					{location:{right:2,top:1},media:{word:'key: I'}, css:{color:'#000000','font-size':'1em'}},
+					{location:{left:2,top:1},media:{word:'key: E'}, css:{color:'#000000','font-size':'20px'}},
+					{location:{right:2,top:1},media:{word:'key: I'}, css:{color:'#000000','font-size':'20px'}},
 					{location:{left:2,top:4},media:targetCats.leftAttTargets.title.media, css:targetCats.leftAttTargets.title.css},
 					{location:{right:2,top:4},media:targetCats.rightAttTargets.title.media, css:targetCats.rightAttTargets.title.css}
 				],
@@ -505,8 +505,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				{handle:'space',on:'space'} //Will handle a SPACEBAR reponse
 			],
 			layout: [
-				{location:{left:2,top:1},media:{word:'key: E'}, css:{color:'#000000','font-size':'1em'}},
-				{location:{right:2,top:1},media:{word:'key: I'}, css:{color:'#000000','font-size':'1em'}},
+				{location:{left:2,top:1},media:{word:'key: E'}, css:{color:'#000000','font-size':'20px'}},
+				{location:{right:2,top:1},media:{word:'key: I'}, css:{color:'#000000','font-size':'20px'}},
 				{location:{left:2,top:4},media:targetCats.leftAttTargets.title.media, css:targetCats.leftAttTargets.title.css},
 				{location:{right:2,top:4},media:targetCats.rightAttTargets.title.media, css:targetCats.rightAttTargets.title.css}
 			],
