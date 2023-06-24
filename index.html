@@ -92,6 +92,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instructions : {
 				//Block 1
 				firstBlock : '<div><p style="font-size:1.1em; text-align:left; margin-left:10px; margin-right:10px; font-family:arial"><color="#000000"><br/>' + 
+				'<b>This task needs to be done on your desktop or laptop</b>.<br/>' +
 				'Put your middle or index fingers on the <b>E</b> and <b>I</b> keys of your keyboard.<br/>' + 
 				'Pairs of items (words) will appear one after another.<br/>' + 
 				'For each pair of items, ignore the first item and categorize the second item as NUMBER'  + 
@@ -298,8 +299,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				data : {score:0},// by default each trial is crrect, this is modified in case of an error
 				//Layout defines what will be presented in the trial. It is like a background display.
 				layout: [
-					{location:{left:2,top:1},media:{word:'key: E'}, css:{color:'#000000','font-size':'40px'}},
-					{location:{right:2,top:1},media:{word:'key: I'}, css:{color:'#000000','font-size':'40px'}},
+					{location:{left:2,top:1},media:{word:'KEY: E'}, css:{color:'#0000ff','font-size':'40px'}},
+					{location:{right:2,top:1},media:{word:'KEY: I'}, css:{color:'#0000ff','font-size':'40px'}},
 					{location:{left:2,top:7},media:targetCats.leftAttTargets.title.media, css:targetCats.leftAttTargets.title.css},
 					{location:{right:2,top:7},media:targetCats.rightAttTargets.title.media, css:targetCats.rightAttTargets.title.css}
 				],
@@ -505,8 +506,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				{handle:'space',on:'space'} //Will handle a SPACEBAR reponse
 			],
 			layout: [
-				{location:{left:2,top:1},media:{word:'key: E'}, css:{color:'#000000','font-size':'40px'}},
-				{location:{right:2,top:1},media:{word:'key: I'}, css:{color:'#000000','font-size':'40px'}},
+				{location:{left:2,top:1},media:{word:'KEY: E'}, css:{color:'#0000ff','font-size':'40px'}},
+				{location:{right:2,top:1},media:{word:'KEY: I'}, css:{color:'#0000ff','font-size':'40px'}},
 				{location:{left:2,top:7},media:targetCats.leftAttTargets.title.media, css:targetCats.leftAttTargets.title.css},
 				{location:{right:2,top:7},media:targetCats.rightAttTargets.title.media, css:targetCats.rightAttTargets.title.css}
 			],
